@@ -1,0 +1,26 @@
+{
+    "spiders": [
+      {
+    		"origin_type": "huxiu",
+    		"start_url": "https://www.huxiu.com",
+        "base_url":  "https://www.huxiu.com/",
+    		"reg_url": "//div[@class=\"mob-ctt\"]/h2//a/@href",
+    		"reg_title": "//h1[@class=\"t-h1\"]",
+    		"reg_desc": "//meta[@name=\"description\"]/@content",
+    		"reg_content": "//div[@class=\"article-content-wrap\"]/p",
+    		"urls_num": 5,
+        "article_type": 0
+    	},
+    	{
+    		"origin_type": "qiushi",
+    		"start_url": "http://www.qiushibaike.com",
+        "base_url":  "http://www.qiushibaike.com/",
+    		"reg_url": "//a[@class=\"contentHerf\"]/@href",
+    		"reg_title": "//div[@id=\"content\"]//a[@title]/h2",
+    		"reg_desc": "//div[@class=\"contentxxxx\"]",
+    		"reg_content": "//div[@class=\"content\"]",
+    		"urls_num": 5,
+        "article_type": 1
+    	}
+    ]
+}
